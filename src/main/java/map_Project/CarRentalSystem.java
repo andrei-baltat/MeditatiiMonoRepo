@@ -1,3 +1,5 @@
+package map_Project;
+
 import java.util.HashMap;
 import java.util.Scanner;
 

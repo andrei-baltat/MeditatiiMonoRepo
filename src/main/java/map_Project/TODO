@@ -1,0 +1,15 @@
+1. Îmbunătățește aplicația prezentată anterior, cel puțin din următoarele perspective:
+
+Sistemul afișează un mesaj de eroare la adăugarea unui autoturism deja existent. În urma operației colecția rămâne nemodificată.
+Întrebare: Ce se întâmplă în acest moment la adăugarea unui autoturism deja existent în colecție, dar cu un alt proprietar? Determină singur comportamentul folosind documentația oficială și diverse scenarii de testare.
+Sistemul afișează corespunzător un mesaj de succes sau unul de eroare la ștergerea unui autoturism din hashtable.
+Sistemul afișează un mesaj de eroare prietenos (i.e. human readable) atunci când se dorește aflarea șoferului pentru un autovehicul inexistent.
+Sistemul implementează o comandă totalRented care întoarce numărul de mașini închiriate la acel moment.
+2. Adaugă aplicației încă o singură structură de date (hashtable?) care să mențină evidența autovehiculelor închiriate de un anumit proprietar. Practic, sistemul va putea răspunde și următoarelor cereri:
+
+getCarsNo <OWNER_NAME>: va returna numărul de mașini închiriate de proprietarul temporar OWNER_NAME.
+getCarsList <OWNER_NAME>: va returna lista de mașini închiriate de proprietarul temporar OWNER_NAME.
+Hints pentru o posibilă implementare:
+
+Hashtable-ul va avea tipul <String, RentedCars> unde RentedCars va fi o clasă definită de tine ce va ține evidența numărului de mașini și respectiv listei de autovehicule.
+Pentru o structurare a codului corectă (d.p.d.v. OOP) clasa RentedCars ar trebui să implementeze toată funcționalitatea aferentă gestiunii autoturismelor per proprietar.
